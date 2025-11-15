@@ -27,7 +27,6 @@ class GuessingGame:
 
 current_game = GuessingGame(10)
 # Define an instance method GuessingGame#solved which returns True if the most recent user_guess was correct and False otherwise.
-user_guess = 0
 while current_game.solved() == False:
     user_guess = int(input(f"Guess a number. "))
     guess_check = current_game.guess(user_guess)

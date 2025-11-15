@@ -1,4 +1,4 @@
-# import random
+import random
 # # let's do a game where you guess a number
 # # give feedback on it the number is high, low, or corrent. 
 # # create a method that returns true if the last guess was correct and false if not. 
@@ -48,13 +48,13 @@ class GuessingGame:
 
 # Define an instance method GuessingGame#solved which returns True if the most recent user_guess was correct and False otherwise.
 
-def main_game(self):
-    solved = False
+    def main_game(self):
+        solved = False
 
-    while not solved:
-        user_guess = self.user_input()
-        solved = self.game_test(user_guess) ## set solved to the result of the user_guess method
+        while not solved:
+            user_guess = self.user_input()
+            solved = self.game_test(user_guess) ## set solved to the result of the user_guess method
 
 current_game = GuessingGame(1,5)
 
-# current_game.main_game()
+current_game.main_game()
